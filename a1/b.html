@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body{
+				background-color: black;
+			}
+			p{
+				color: #fff;
+			}
+			#w{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 100vh;
+			}
+			.b{
+				
+				width: 300px;
+				text-align: center;
+			}
+			img{
+				height: 100px;
+				width: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="w">
+			<div class="b" onclick="three('part1.html')">
+				<img src="part1.png">
+				<p>Part 1</p>
+			</div>
+			<div class="b" onclick="three('part2.html')">
+				<img src="part2.png">
+				<p>Part 2</p>
+			</div>
+			<div class="b" onclick="three('part3.html')">
+				<img src="part3.png">
+				<p>Part 3</p>
+			</div>
+		</div>
+		<script>
+			function three(x){
+				window.location.replace(x)
+			}
+			
+		</script>
+	</body>
+</html>
