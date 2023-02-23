@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+		<style>
+			body {
+				background-color: black;
+				font-family: Helvetica;
+			}
+
+			p {
+				color: #fff;
+				font-size: 16px;
+			}
+
+			#a {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 85vh;
+				text-align: left;
+			}
+
+			i {
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div onclick="cc()">
+			<i class="fa fa-mail-reply fa-3x" id="i1"></i>
+		</div>
+		<div id="a">
+			<div style="width: 1000px;">
+				<p id='p1'>&nbsp;&nbsp;&nbsp;&nbsp;Of course the Japanese room does have its picture alcove, and in it a
+					hanging scroll and a flower arrangement. But the scroll and the flowers serve not as ornament but
+					rather to give depth to the shadows. We value a scroll above all for the way it blends with the
+					walls of the alcove, and thus we consider the mounting quite as important as the calligraphy or
+					painting. Even the greatest masterpiece will lose its worth as a scroll if it fails to blend with
+					the alcove, while a work of no particular distinction may blend beautifully with the room and set
+					off to unexpected advantage both itself and its surroundings. Wherein lies the power of an otherwise
+					ordinary work to produce such an effect? Most often the paper, the ink, the fabric of the mounting
+					will possess a certain look of antiquity, and this look of antiquity will strike just the right
+					balance with the darkness of the alcove and room.
+				</p>
+				<p id='p2'>&nbsp;&nbsp;&nbsp;&nbsp;We have all had the experience, on a visit to one of the great
+					temples of Kyoto or Nara, of being shown a scroll, one of the temple's treasures, hanging in a
+					large, deeply recessed alcove. So dark are these alcoves, even in bright daylight, that we can
+					hardly discern the outlines of the work; all we can do is listen to the explanation of the guide,
+					follow as best we can the all-but invisible brush strokes, and tell ourselves how magnificent a
+					painting it must be. Yet the combination of that blurred old painting and the dark alcove is one of
+					absolute harmony. The lack of clarity, far from disturbing us, seems rather to suit the painting
+					perfectly.
+				</p>
+				<p id='p3'>&nbsp;&nbsp;&nbsp;&nbsp;For the painting here is nothing more than another delicate surface
+					upon which the faint, frail light can play; it performs precisely the same function as the
+					sand-textured wall. This is why we attach such importance to age and patina. A new painting, even
+					one done in ink monochrome or subtle pastels, can quite destroy the shadows of an alcove, unless it
+					is selected with the greatest care.</p>
+				<p id='p4'>&nbsp;&nbsp;&nbsp;&nbsp;A Japanese room might be likened to an inkwash painting, the
+					paper-paneled shoji being the expanse where the ink is thinnest, and the alcove where it is darkest.
+					Whenever I see the alcove of a tastefully built Japanese room, I marvel at our comprehension of the
+					secrets of shadows, our sensitive use of shadow and light. For the beauty of the alcove is not the
+					work of some clever device. An empty space is marked off with plain wood and plain walls, so that
+					the light drawn into it forms dim shadows within emptiness. There is nothing more. And yet, when we
+					gaze into the darkness that gathers behind the crossbeam, around the flower vase, beneath the
+					shelves, though we know perfectly well it is mere shadow, we are overcome with the feeling that in
+					this small corner of the atmosphere there reigns complete and utter silence; that here in the
+					darkness immutable tranquility holds sway. The "mysterious Orient" of which Westerners speak
+					probably refers to the uncanny silence of these dark places. And even we as children would feel an
+					inexpressible chill as we peered into the depths of an alcove to which the sunlight had never
+					penetrated. Where lies the key to this mystery? illtimately it is the magic of shadows. Were the
+					shadows to be banished from its comers, the alcove would in that instant revert to mere void.
+				</p>
+				<p id='p5'>&nbsp;&nbsp;&nbsp;&nbsp;This was the genius of our ancestors, that by cutting off the light
+					from this empty space they imparted to the world of shadows that formed there a quality of mystery
+					and depth superior to that of any wall painting or ornament. The technique seems simple, but was by
+					no means so simply achieved. We can imagine with little difficulty what extraordinary pains were
+					taken with each invisible detail-the placement of the window in the shelving recess, the depth of
+					the crossbeam, the height of the threshold. But for me the most exquisite touch is-the pale white
+					glow of the shoji in the study bay; I need only pause before it and I forget the passage of time.
+				</p>
+			</div>
+		</div>
+		<div onclick="bb()">
+			<i class="fa fa-circle-o fa-3x" id="i2"></i>
+		</div>
+		<script>
+			var x = 0;
+
+			function bb() {
+				if (x == 0) {
+					document.body.style.background = '#fff';
+					document.getElementById('p1').style.color = '#000'
+					document.getElementById('p2').style.color = '#000'
+					document.getElementById('p3').style.color = '#000'
+					document.getElementById('p4').style.color = '#000'
+					document.getElementById('p5').style.color = '#000'
+					document.getElementById('i1').style.color = '#000'
+					document.getElementById('i2').style.color = '#000'
+					x = 1
+				} else {
+					document.body.style.background = '#000';
+					document.getElementById('p1').style.color = '#fff'
+					document.getElementById('p2').style.color = '#fff'
+					document.getElementById('p3').style.color = '#fff'
+					document.getElementById('p4').style.color = '#fff'
+					document.getElementById('p5').style.color = '#fff'
+					document.getElementById('i1').style.color = '#fff'
+					document.getElementById('i2').style.color = '#fff'
+					x = 0
+				}
+			}
+
+			function cc() {
+				window.location.replace('b.html')
+			}
+		</script>
+	</body>
+</html>
