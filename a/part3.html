@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+		<style>
+			body{
+				background-color: black;
+			}
+			p{
+				color: #fff;
+				font-size: 50px;
+			}
+			#a{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 85vh;
+			}
+			i{
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div onclick="cc()">
+			<i class="fa fa-mail-reply fa-3x" id="i1"></i>
+		</div>
+		<div id="a">
+			<p id='p'>Part 3</p>
+		</div>
+		<div onclick="bb()">
+			<i class="fa fa-circle-o fa-3x" id="i2"></i>
+		</div>
+		<script>
+			var x=0;
+			function bb(){
+				if(x==0){
+					document.body.style.background='#fff';
+					document.getElementById('p').style.color='#000'
+					document.getElementById('i1').style.color='#000'
+					document.getElementById('i2').style.color='#000'
+					x=1
+				}else{
+					document.body.style.background='#000';
+					document.getElementById('p').style.color='#fff'
+					document.getElementById('i1').style.color='#fff'
+					document.getElementById('i2').style.color='#fff'
+					x=0
+				}
+			}
+			function cc(){
+				window.location.replace('b.html')
+			}
+		</script>
+	</body>
+</html>
